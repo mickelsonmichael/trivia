@@ -14,5 +14,8 @@ module.exports = {
 			title: "Trivia"
 		})
 	],
+	devServer: {
+		contentBase: "./dist",
+	},
 };
 

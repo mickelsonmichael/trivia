@@ -3,6 +3,7 @@
 	"title": "trivia",
 	"private": true,
 	"scripts": {
+		"start": "webpack serve --open",
 		"build": "webpack"
 	},
 	"dependencies": {},
