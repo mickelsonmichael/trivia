@@ -2,6 +2,9 @@
 	"author": "Michael Mickelson <mickelsonmichael@gmail.com>",
 	"title": "trivia",
 	"private": true,
+	"scripts": {
+		"build": "webpack"
+	},
 	"dependencies": {},
 	"devDependencies": {
 		"@babel/core": "^7.12.10",
