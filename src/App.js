@@ -1,7 +1,8 @@
 import React from "react";
+import Board from "./board";
 
 const App = () => (
-	<div>Hello, you!</div>
+	<Board />
 );
 
 export default App;
