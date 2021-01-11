@@ -11,11 +11,29 @@ module.exports = {
 	plugins: [
 		new CleanWebpackPlugin(),
 		new HtmlWebpackPlugin({
-			title: "Trivia"
+			title: "Trivia",
+			template: "./src/index.html",
 		})
 	],
 	devServer: {
 		contentBase: "./dist",
 	},
+	module: {
+		rules: [
+			{
+				test: /\.m?js$/,
+				exclude: /node_modules/,
+				use: {
+					loader: "babel-loader",
+					options: {
+						presets: [
+							"@babel/preset-env",
+							"@babel/preset-react"
+						]
+					}
+				}
+			}
+		]
+	}
 };
 
